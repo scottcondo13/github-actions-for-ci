@@ -1,0 +1,15 @@
+name: Teams tubular approval workflow
+
+on: Pull_request_review
+
+jobs:
+  labelWhenApproved:
+    runs-on: ubuntu-latest
+  steps:
+    uses: pullreminders/label-when-approved-action@master
+    env:
+      APPROVALS: 1
+      GITHUB-TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ADD_LABEL: "approved" 
+      
+      
