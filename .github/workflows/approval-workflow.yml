@@ -1,1 +1,3 @@
-name: Teams tubular workflow
+name: Teams tubular approval workflow
+
+on: Pull_request_review
